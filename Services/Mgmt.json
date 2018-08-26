@@ -1,0 +1,25 @@
+{
+    "Service":  {
+        "Port": 8000,
+        "Description":  [
+            "MGMT"
+        ],                 
+        "IP_Address":  [
+            "localhost"
+        ],
+        "Username":  [
+            "administrator"
+        ],
+        "Password":  [
+            "VMware1!"
+        ],
+        "RoutesFilePath":  [
+            "C:\\Open_Projects\\vmworld2018-hack-ps-api-gateway\\RouteFiles\\mgmt.ps1"
+        ],
+        "Security": {
+            "Type": [
+                "Disabled"
+            ]
+        }
+    }
+}
