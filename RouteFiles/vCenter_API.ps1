@@ -12,33 +12,13 @@ function Invoke-AvailableRouteSet
     $script:Routes = @(
         @{
             'RequestType'    = 'GET'
-            'RequestURL'     = '/VM'
-            'RequestCommand' = 'Get-VM'
-        }
-        @{
-            'RequestType'    = 'GET'
             'RequestURL'     = '/endpoint/status'
             'RequestCommand' = 'return 1'
         }
         @{
             'RequestType'    = 'GET'
-            'RequestURL'     = '/endpoint/ServiceStatus'
-            'RequestCommand' = 'C:\open_Projects\vmworld2018-hack-ps-api-gateway\endpoints\GET\Get-ServiceStatus.ps1'
-        }
-        @{
-            'RequestType'    = 'PUT'
-            'RequestURL'     = '/vm'
-            'RequestCommand' = 'C:\open_Projects\vmworld2018-hack-ps-api-gateway\endpoints\GET\Get-ServiceStatus.ps1'
-        }
-        @{
-            'RequestType'    = 'POST'
-            'RequestURL'     = '/data'
-            'RequestCommand' = 'C:\open_Projects\vmworld2018-hack-ps-api-gateway\endpoints\GET\Get-ServiceStatus.ps1'
-        }
-        @{
-            'RequestType'    = 'DELETE'
-            'RequestURL'     = '/data'
-            'RequestCommand' = 'C:\open_Projects\vmworld2018-hack-ps-api-gateway\endpoints\GET\Get-ServiceStatus.ps1'
+            'RequestURL'     = '/datastore'
+            'RequestCommand' = 'C:\open_Projects\vmworld2018-hack-ps-api-gateway\endpoints\GET\Get-PsDatastore.ps1'
         }
     )
 }
